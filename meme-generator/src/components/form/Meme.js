@@ -4,7 +4,7 @@ import "./meme.css"
 const Meme = () => {
 
     return (
-    <div classname="main">
+    <main>
         <form className="form">
             
             <input type="text" className="form-input" placeholder="top-text" required={true} />
@@ -15,7 +15,7 @@ const Meme = () => {
         
             
         </form>
-    </div>    
+    </main>    
     )
 }
 
