@@ -1,14 +1,19 @@
 import "./meme.css";
 import MemeData from "../../MemeData.js";
 import {BsFillImageFill} from "react-icons/bs";
+import {useState} from "react";
 
 
 const Meme = () => {
 
+    const [memeImage, setMemeImage] = useState("")
+
+    
+
     function getMemeImage () {
         const memesArray = MemeData.data.memes
         const randomNumber = Math.floor(Math.random() * memesArray.length)
-        const url = memesArray[randomNumber].url
+        setMemeImage(memesArray[randomNumber].url)
     }
 
     return (
@@ -23,6 +28,7 @@ const Meme = () => {
         
             
         </div>
+        <img src={memeImage} alt="" className="meme-img" />
     </main>    
     )
 }
