@@ -31,8 +31,12 @@ main {
     color: white;
     border: none;
     cursor: pointer;
+   
 }
 
 .meme-img {
     max-width: 100%;
+    border-radius: px;
+    padding: 20px;
+    
 }
